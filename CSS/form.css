@@ -191,7 +191,7 @@
 }
 
 .dailylist {
-    padding: 30px 200px;
+    padding: 30px 200px 30px 100px;
 }
 
 .line {
@@ -226,6 +226,7 @@
 .item_info {
     display: flex;
     margin-bottom: 60px;
+    margin-left: -50px;
 }
 
 .imgsinfo {
@@ -240,6 +241,7 @@
     width: 400px;
     line-height: 24px;
     font-size: 14px;
+    margin-left: 70px;
 }
 
 .right_tit {
@@ -248,4 +250,5 @@
     display: block;
     color: #FFD204;
     font-weight: 550;
+    margin-left: 70px;
 }
