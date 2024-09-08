@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加入我们</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/form.css">
+    <style>
+        /* 视频和二维码容器的样式 */
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qr-code-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* 文字的样式 */
+        .join-us-text {
+            text-align: center; /* 文字居中 */
+            font-family: 'Brush Script MT', cursive; /* 使用艺术字体 */
+            font-size: 32px; /* 设置字体大小 */
+            color: #333; /* 设置字体颜色 */
+            margin-top: 20px; /* 添加上边距 */
+        }
+    </style>
+</head>
+
+<div class="daily">
+    <img class="about_bgc" src="./images/大拼图2.jpg" alt="">
+    <div class='ribbon'>
+        <a href='./index.html'><span>社团介绍</span></a>
+        <a href='./daily.html'><span>社团活动</span></a>
+        <a href='./about.html'><span>社会实践</span></a>
+        <a href='form.html'><span>加入我们</span></a>
+    </div>
+    <body>
+        <div class="video-container">
+            <video width="800" controls id="video" preload="auto" height="auto"
+                   autoplay="autoplay" loop="loop" type="video/mp4" src="./video/招新.mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="join-us-text">
+            扫描下方二维码加入我们！
+        </p>
+        <div class="qr-code-container">
+            <img src="./images/qq二维码.jpg" class="imgsinfo" alt="二维码">
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var video = document.getElementById('video');
+                video.style.maxWidth = '100%';
+                video.style.height = 'auto';
+
+                var qrCodeImg = document.querySelector('.imgsinfo');
+                qrCodeImg.style.maxWidth = '100%';
+                qrCodeImg.style.height = 'auto';
+            });
+        </script>
+    </body>
+</html>
