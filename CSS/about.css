@@ -18,15 +18,15 @@
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        /*��ʼ״̬ ͸����Ϊ0*/
+        /*初始状态 透明度为0*/
     }
     50% {
         opacity: 0;
-        /*�м�״̬ ͸����Ϊ0*/
+        /*中间状态 透明度为0*/
     }
     100% {
         opacity: 1;
-        /*��β״̬ ͸����Ϊ1*/
+        /*结尾状态 透明度为1*/
     }
 }
 
@@ -43,11 +43,11 @@
     margin: auto;
     text-align: center;
     -webkit-animation-name: fadeIn;
-    /*��������*/
+    /*动画名称*/
     -webkit-animation-duration: 3s;
-    /*��������ʱ��*/
+    /*动画持续时间*/
     -webkit-animation-iteration-count: 1;
-    /*��������*/
+    /*动画次数*/
     -webkit-animation-delay: 0s;
 }
 
@@ -128,52 +128,36 @@
 
 .me {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素水平居中 */
+    justify-content: center; /* 子元素垂直居中 */
     margin-top: 60px;
     overflow: hidden;
     padding: 0 50px;
+}
+
+.me_img {
+    width: 700px;
+    height: 500px;
+    margin-bottom: 20px; /* 在图片和文字之间添加间隔 */
 }
 
 .me_tit {
     width: 600px;
     line-height: 36px;
     font-size: 18px;
-    margin-left: 40px;
-    margin-top: 5px;
+    text-align: center; /* 文字居中对齐 */
+    margin: 0; /* 移除之前的外边距 */
     font-weight: 545;
     overflow: hidden;
 }
 
-.me_img {
-    width: 700px;
-    height: 500px;
-}
-
-.animate {
-    padding-left: 20px;
-    width: 500px;
-    font-size: 16px;
-    color: #0e0d0d;
-    animation: 20s wordsLoop linear infinite normal;
-
-}
-
-@keyframes wordsLoop {
-    0% {
-        transform: translateY(50px);
-        -webkit-transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-    }
-}
 
 .iconlist {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 100px 100px;
+    padding: 100px 60px 50px 10px;
 }
 
 .iconimg {
